@@ -6,6 +6,8 @@ FRED Docs
 About FRED
 ----------
 
+.. image:: ./docs/images/fred-frame-2.png
+
 FRED is a framework to support the design, development, and execution of *predictable* software on **FPGA** system-on-chips platforms.
 
 It exploits **dynamic partial reconfiguration** and recurrent execution to virtualize the FPGA fabric, enabling the user to allocate a larger number of hardware accelerators than could otherwise be fit into the physical fabric. It integrates *automated floorplanning* and a set of *runtime mechanisms* to enhance predictability by scheduling hardware resources and regulating bus/memory contention.
@@ -18,13 +20,13 @@ The project is in developed at the Real-Time Systems Laboratory (ReTiS Lab) (ret
 .. toctree::
    :maxdepth: 2
    
-   docs/getting-started/index
    docs/framework/index
    docs/dpr-design/index
    docs/analyzer/index
    docs/runtime/index   
    docs/bus-manager/index
    docs/reconfiguration/index
+   docs/getting-started/index
    docs/publications/index
    docs/about/index
 
