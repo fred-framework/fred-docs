@@ -16,13 +16,14 @@ Project coordinators:
 
 Contributors:
 
--  Marco Pagani: FRED runtime, AXI Budgeting Unit, AXI Bandwidth Equalizer, Image processing demo;
--  Francesco Restuccia: AXI Bandwidth Equalizer, AXI Stall Monitor, AXI HyperConnect;
 -  Alessandro Biondi: FRED Analyzer, AXI Budgeting Unit, AXI Bandwidth Equalizer, Floorplannig;
--  Biruk Seyoum: Floorplannig;
--  Giuseppe Lipari: AXI Budgeting Unit;
--  Enrico Rossi: Preemptable reconfiguration, AXI Budgeting Unit;
 -  Alessio Balsini: FRED scheduling simulator, FRED runtime;
--  Sara Balleri: Deep learning case study;
--  Lorenzo Molinari: Support for PYNQ.
+-  Alexandre Amory: FRED/DART integration, DART testing, FRED build system, documentation, testing on ZCU102 board;
+-  Biruk Seyoum: DART and Floorplannig;
+-  Enrico Rossi: Preemptable reconfiguration, AXI Budgeting Unit;
+-  Francesco Restuccia: AXI Bandwidth Equalizer, AXI Stall Monitor, AXI HyperConnect, Xilinx DNN;
+-  Giuseppe Lipari: AXI Budgeting Unit;
+-  Lorenzo Molinari: Support for PYNQ;
+-  Marco Pagani: FRED runtime, AXI Budgeting Unit, AXI Bandwidth Equalizer, Image processing demo;
+-  Sara Balleri: Deep learning case study.
 

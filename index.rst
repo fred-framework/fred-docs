@@ -63,9 +63,9 @@ If you are using DART, please cite:
 Disclaimer
 ----------
 
-FRED/DART and its software are protected under the MIT_ License:
+FRED/DART and its software are protected under the GPLv2_ License:
 
-.. _MIT: http://opensource.org/licences/MIT
+.. _GPLv2: https://opensource.org/licenses/GPL-2.0
 
 Feedback
 --------
