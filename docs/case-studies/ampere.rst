@@ -1,4 +1,4 @@
-.. _ampere-case:
+.. _ampere_case:
 
 AMPERE Project Case Study
 ---------------------------

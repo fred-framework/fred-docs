@@ -4,7 +4,8 @@
 Getting Started
 ==============================
 
-blabla
+.. ATTENTION::
+   TBD by Amory
 
 How to Install DART
 --------------------
