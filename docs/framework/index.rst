@@ -15,9 +15,9 @@ The following set of tools and mechanisms are available:
 
 - FLORA: a floorplanner that optimizes the allocation of hardware accelerators on the FPGA fabric.
 
-- FRED runtime: a Linux support (exposed via both C and Python API) for managing hardware acceleration requests executing on a virtualized FPGA fabric with predictable response times.
+- `FRED runtime <../runtime>`_: a Linux support (exposed via both C and Python API) for managing hardware acceleration requests executing on a virtualized FPGA fabric with predictable response times.
 
-- FRED analyzer: a schedulability analysis tool that verifies whether a set of real-time tasks and hardware accelerators can be executed within their timing constraints, taking into account all the sources of delays introduced by the architecture.
+- `FRED analizer <../analizer>`_: a schedulability analysis tool that verifies whether a set of real-time tasks and hardware accelerators can be executed within their timing constraints, taking into account all the sources of delays introduced by the architecture.
 
 - Predictable bus manager: a bus control unit that allows achieving predictable arbitration, protection from timing attacks, and bandwidth isolation to shield the system from misbehaving accelerators.
 
@@ -44,4 +44,4 @@ The interaction between SW-tasks and HW-tasks is illustrated in the above figure
 
 SW-tasks are scheduled by the operating system that controls the processors. To ensure predictability in scheduling SW-tasks, FRED mandates the use of partitioned fixed-priority scheduling (each SW-task is statically allocated to a processor and assigned of a static priority).
 
-Conversely, the acceleration requests are directly managed by the FRED runtime with a custom scheduling policy.
+Conversely, the acceleration requests are directly managed by the `FRED runtime <../runtime>`_ with a custom scheduling policy.

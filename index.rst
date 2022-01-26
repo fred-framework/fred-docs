@@ -3,10 +3,10 @@
 FRED Docs
 =========
 
-About FRED
-----------
-
 .. image:: ./docs/images/fred-frame-2.png
+    :width: 400px
+    :align: center
+    :alt: FRED workflow figure
 
 FRED is a framework to support the design, development, and execution of *predictable* software on **FPGA** system-on-chips platforms.
 
