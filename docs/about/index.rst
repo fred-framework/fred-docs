@@ -23,7 +23,7 @@ Contributors
 
 -  Alessandro Biondi: FRED Analyzer, AXI Budgeting Unit, AXI Bandwidth Equalizer, Floorplannig;
 -  Alessio Balsini: FRED scheduling simulator, FRED runtime;
--  Alexandre Amory: FRED/DART integration, DART testing, FRED build system, documentation, testing on ZCU102 board;
+-  Alexandre Amory: FRED/DART integration, DART testing, DART IPs, AMALTHEA codegen, FRED build system, documentation, testing on ZCU102 board;
 -  Biruk Seyoum: DART and Floorplannig;
 -  Enrico Rossi: Preemptable reconfiguration, AXI Budgeting Unit;
 -  Francesco Restuccia: AXI Bandwidth Equalizer, AXI Stall Monitor, AXI HyperConnect, Xilinx DNN;
