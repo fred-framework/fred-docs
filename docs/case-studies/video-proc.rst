@@ -1,3 +1,4 @@
+.. _video-proc-case:
 
 Video Processing with ZYBO Board
 ----------------------------------
