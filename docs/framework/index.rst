@@ -48,7 +48,7 @@ FRED software stack
     https://docs.google.com/presentation/d/10wZZSQadBjDf3sg9Mvy9TM_6Sgrb7MYRacJHg6nL2AY/edit?usp=sharing
 
 .. image:: ../images/fred-sw-stack.png
-    :width: 600px
+    :width: 800px
     :align: center
     :alt: FRED software stack
 
@@ -70,7 +70,7 @@ As can be seen in the FRED software stack figure, the FRED server expects partia
     https://docs.google.com/presentation/d/10wZZSQadBjDf3sg9Mvy9TM_6Sgrb7MYRacJHg6nL2AY/edit?usp=sharing
 
 .. image:: ../images/dart-design-flow.png
-    :width: 600px
+    :width: 400px
     :align: center
     :alt: DART design flow
 
