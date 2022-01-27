@@ -57,7 +57,7 @@ The figure above illustrates the FRED software stack and is used to introduces i
 Three auxiliar repositories were develop to ease the runtime part of FRED framework:
 
 - `fred-framework <https://github.com/fred-framework/fred-framework>`_: a meta repository that combines all the software parts presented above, facilitating compilation in the board;
-- `meta-fred <https://github.com/fred-framework/meta-retis>`_: A Yocto layer to facilitate cross-compilation and integration with a Linux image;
+- `meta-fred <https://github.com/fred-framework/meta-fred>`_: A Yocto layer to facilitate cross-compilation and integration with a Linux image;
 - `meta-retis <https://github.com/fred-framework/meta-retis>`_: A pre-configured Yocto image running on top of Xilinx petalinux that includes several resources for embedded software development for soft realtime applications. This image can be combined with *meta-fred* to generate a complete FRED-enabled Linux image for both **Zynq** and **ZynqMP** FPGA boards.
 
 Predictable DPR design
