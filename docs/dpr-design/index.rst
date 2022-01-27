@@ -35,7 +35,7 @@ One of the major challenges in floorplanning automation is to adequately model t
 FLORA solves the floorplanning automation problem and produces optimal floorplans for RRs by leveraging Mixed-Integer Linear Programming (MILP) optimization based on a fine-grained layout model of the computing resources (i.e., CLBs, BRAMs and DSPs) and system resources (i.e., interconnects, different functional blocks etc&hellip;) on the FPGA.
 
 .. image:: ../images/flora-first-pic.png
-    :width: 400px
+    :width: 500px
     :align: center
     :alt: FLORA floorplanner
 
@@ -46,7 +46,7 @@ The inputs to FLORA are the FPGA resource fingerprint, the resource requirements
 The output of FLORA is a constraint file (e.g., an ``.xdc`` file for Xilinx Vivado) that describes the layout of each RR according to the syntax specified by the design tool provided by the vendor. Before the generation of the final constraint file, FLORA provides an additional visualization tool that allows the designer to inspect the generated floorplan.
 
 .. image:: ../images/flora-second-pic.png
-    :width: 400px
+    :width: 600px
     :align: center
     :alt: FLORA flow
 

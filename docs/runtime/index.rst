@@ -22,7 +22,7 @@ Software support
 The software support comprises a set of software components in charge of managing the FPGA and implementing the FRED scheduling policy on top of the system support design. The software support has been designed in a modular fashion, relying as much as possible on user space implementation to improve maintainability, safety, and expandability. The central component of the software support is a user-space server process, named the *FRED server*, which is in charge of managing acceleration requests from Linux processes (and threads) according to the FRED scheduling policy. Linux processes and hardware accelerators share data through a zero-copy mechanism implemented using physically contiguous (uncached) memory buffers. The FRED server relies on two custom kernel modules and the UIO framework for controlling the hardware accelerators.
 
 .. image:: ../images/fred-linux-sw-arch.png
-    :width: 500px
+    :width: 600px
     :align: center
     :alt: Software support
 

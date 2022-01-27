@@ -23,8 +23,8 @@ The project is in developed at the `Real-Time Systems Laboratory (RETIS Lab) <ht
    docs/analyzer/index
    docs/runtime/index   
    docs/bus-manager/index
-   docs/reconfiguration/index
    docs/getting-started/index
+   docs/roadmap/index
    docs/publications/index
    docs/about/index
 
