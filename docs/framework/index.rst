@@ -5,7 +5,7 @@ The FRED Framework
 ===================
 
 .. image:: ../images/fred-schema.png
-    :width: 300px
+    :width: 500px
     :align: center
     :alt: FRED schema
 
