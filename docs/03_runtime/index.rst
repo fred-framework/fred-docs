@@ -4,7 +4,9 @@
 FRED Runtime
 ==============
 
-The *FRED runtime* is the reference implementation of the FRED framework for the GNU/Linux operating system. It has been designed to run on the *Xilinx Zynq-7000 and Zynq UltraScale+ SoC FPGAs platforms*. The FRED runtime consists of a *system support design*, automated by `Getting Started <../02_dart>`_, and a set of *software support* components.
+The *FRED runtime* is the reference implementation of the FRED framework for the GNU/Linux operating system. It has been designed to run on the *Xilinx Zynq-7000 and Zynq UltraScale+ SoC FPGAs platforms*. The FRED runtime consists of a *system support design*, automated by `DART <../02_dart>`_, and a set of *software support* components.
+
+.. _fred_hw_support_sec:
 
 System support design
 ----------------------

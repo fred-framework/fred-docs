@@ -4,7 +4,8 @@
 Bus Manager
 ============
 
-FRED framework bus infrastructure consists of the following blocks. Currently, `bus manager` is still `not integrated into DART <https://github.com/fred-framework/dart/issues/1>`_.
+This section presents the current development related to the `bus manager`. Currently, `bus manager` is still `not integrated into DART <https://github.com/fred-framework/dart/issues/1>`_. Section :ref:`fred_hw_support_sec` explains the current DART bus architecture.
+The rest of this chapter explains the *future* (i.e. to be integrated) FRED framework bus infrastructure, which consists of the following blocks.
 
 AXI HyperConnect
 ------------------
