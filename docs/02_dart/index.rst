@@ -36,16 +36,14 @@ Finally, DART generates a bitstream for the static part of the FPGA design and a
 The FLORA floorplanner
 -----------------------
 
-FLORA is the floorplanner used in DART to optimize the allocation of hardware accelerators on the FPGA fabric.
-
-The problem of floorplanning for dynamic partial reconfiguration consists in geometrically placing reconfigurable regions (RRs) within the available area of the FPGA. Producing a feasible floorplan means satisfying the resource requirements of the RRs while respecting the specific vendor-related technological constraints. In addition to feasibility, an optimal floorplan minimizes some performance metrics such as FPGA resource consumption or the maximum wire-length between RRs.
+FLORA is the floorplanner used in DART to optimize the allocation of hardware accelerators on the FPGA fabric. The problem of floorplanning for dynamic partial reconfiguration consists in geometrically placing reconfigurable regions (RRs) within the available area of the FPGA. Producing a feasible floorplan means satisfying the resource requirements of the RRs while respecting the specific vendor-related technological constraints. In addition to feasibility, an optimal floorplan minimizes some performance metrics such as FPGA resource consumption or the maximum wire-length between RRs.
 
 The resource requirement of RRs consists in ensuring that each RR must contain at least the maximum amount of resources required by all the reconfigurable modules that it hosts. Some of the vendor-related constraints on the Xilinx FPGAs include
 
 - RRs must be rectangular;
 - Vertical boundaries of RRs must not split back-to-back interconnect tiles;
 - Horizontal boundaries of RRs must be aligned with clock regions if the reconfigurable module is to be reset after reconfiguration;
-- RRs must not include some components of the FPGA (for 7 series devices this includes clock modifying logic, I/O related components, ICAP, XADC, etc&hellip;).
+- RRs must not include some components of the FPGA (for 7 series devices this includes clock modifying logic, I/O related components, ICAP, XADC, etc;).
 
 One of the major challenges in floorplanning automation is to adequately model the *non-uniform* distribution of *heterogeneous* resources on the fabric, since the model is tightly coupled with the definition of the aforementioned constraints.
 
