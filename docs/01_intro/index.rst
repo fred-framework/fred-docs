@@ -32,21 +32,23 @@ Predictable DPR design
     this image source can be found in this link 
     https://docs.google.com/presentation/d/10wZZSQadBjDf3sg9Mvy9TM_6Sgrb7MYRacJHg6nL2AY/edit?usp=sharing
 
-Our initial problem is to accelarete in FPGA a set of functions of a given application. In the proposed design flow, each function must match with a dart-compatible hardware IP. DART main input is a set of IP cores that will be synthesized for partial bitstreams. The repository `dart_ips <https://github.com/fred-framework/dart_ips>`_ presents a set of IPs ready to be used by DART. 
+Our initial problem is to accelerate in FPGA a set of functions of a given application. In the proposed design flow, each function must match with a dart-compatible hardware IP. DART main input is a set of IP cores that will be synthesized for partial bitstreams. The repository `dart_ips <https://github.com/fred-framework/dart_ips>`_ presents a set of IPs ready to be used by DART. The second set of inputs is the Hw task partitions into reconfigurable regions or the Hw task timing constraints, depending on the mode DART is compiled. 
 
 .. image:: ../images/dart-design-flow.png
     :width: 400px
     :align: center
     :alt: DART design flow
 
-The `FPGA resource map` input represents the FPGA internal organization that DART must know in order to perform its optimization process. DART currently supports the following FPGA boards:
+The `FPGA resource map` input represents the FPGA internal organization that DART must know in order to perform its automated floorplanning optimization process. DART currently supports the following FPGA boards, where ZCU102 is the latest tested board:
 
 - `Pynq board <https://store.digilentinc.com/pynq-z1-python-productivity-for-zynq-7000-arm-fpga-soc/>`_: with device XC7Z020-1CLG400C;
 - `Zybo board <https://reference.digilentinc.com/programmable-logic/zybo/start>`_: with the device XC7Z010-1CLG400C; 
 - `ZCU102 board <https://www.xilinx.com/products/boards-and-kits/ek-u1-zcu102-g.html>`_: with Zynq UltraScale+ XCZU9EG-2FFVB1156 MPSoC;
 - `Ultra96v2 board <https://www.avnet.com/wps/portal/us/products/new-product-introductions/npi/aes-ultra96-v2/>`_: with Zynq UltraScale+ XCZU3EG-SBVA484-1-i MPSoC;
 
-DART is currently integrated with Xilinx Vivado for FPGA synthesis. The `DART repository <https://github.com/fred-framework/dart>`_ provides its source code, documentation and additional examples.
+DART is currently integrated with Xilinx Vivado 2020.2 for FPGA synthesis. The `DART repository <https://github.com/fred-framework/dart>`_ provides its source code, documentation and additional examples.
+
+Finally, DART generates a bitstream for the static part of the FPGA design and a set of partial bitstreams for each Hw task. In addition, DART also generates CSV configuration files describing the Hw task mapping into the FPGA floorplan. These configuration files are later read by FRED when the design is loaded in runtime.
 
 Programming model
 -----------------

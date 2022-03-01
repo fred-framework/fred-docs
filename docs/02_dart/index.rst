@@ -1,8 +1,8 @@
-.. _dpr-design:
+.. _dart:
 
-===========
-DPR Design
-===========
+================
+DART design tool
+================
 
 DART synthesis
 ---------------
