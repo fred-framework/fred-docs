@@ -60,6 +60,11 @@ Three auxiliar repositories were develop to ease the FRED runtime deployment:
 - `meta-fred <https://github.com/fred-framework/meta-fred>`_: A Yocto layer to facilitate cross-compilation and integration with a Linux image;
 - `meta-retis <https://github.com/fred-framework/meta-retis>`_: A pre-configured Yocto image running on top of Xilinx petalinux that includes several resources for embedded software development for soft realtime applications. This image can be combined with *meta-fred* to generate a complete FRED-enabled Linux image for both **Zynq** and **ZynqMP** FPGA boards.
 
+Testing FRED runtime
+---------------------
+
+FRED runtime is available for download. Further instructions can be found in `FRED repository <https://github.com/fred-framework/fred-linux>`_ and in the `Getting Started <../07_getting-started>`_ section.
+
 Reference
 -----------
 
