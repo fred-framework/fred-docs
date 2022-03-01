@@ -6,6 +6,27 @@ FRED Runtime
 
 The *FRED runtime* is the reference implementation of the FRED framework for the GNU/Linux operating system. It has been designed to run on the *Xilinx Zynq-7000 and Zynq UltraScale+ SoC FPGAs platforms*. The FRED runtime consists of a *system support design* and a set of *software support* components.
 
+FRED software stack
+----------------------
+.. comments 
+    this image source can be found in this link 
+    https://docs.google.com/presentation/d/10wZZSQadBjDf3sg9Mvy9TM_6Sgrb7MYRacJHg6nL2AY/edit?usp=sharing
+
+.. image:: ../images/fred-sw-stack.png
+    :width: 800px
+    :align: center
+    :alt: FRED software stack
+
+The figure above illustrates the FRED software stack and is used to introduces its main components. At the **application level** we see that it possible to write applications with `C/C++/Python programming languages <https://github.com/fred-framework/fred-tutorial-app>`_. It is also possible to write applications using ROS2 and Xilinx Vitis AI frameworks (*both currently under development*). Still in **user space**, we have the `fred_lib <https://github.com/fred-framework/fred-linux-client-lib>`_ which is linked with the application to have access to the `fred_server <https://github.com/fred-framework/fred-linux>`_. In kernel space, two Linux kernel modules, called `fred_buffctl <https://github.com/fred-framework/fred-kmods/tree/fpga-mgr/fred_buffctl>`_ and `fpga_mgr <https://github.com/fred-framework/fred-kmods/tree/fpga-mgr/fpga_mgr_zynqmp_drv>`_, where developed/modified to abstract the access to the FPGA fabric. 
+
+Three auxiliar repositories were develop to ease the runtime part of FRED framework:
+
+- `fred-framework <https://github.com/fred-framework/fred-framework>`_: a meta repository that combines all the software parts presented above, facilitating compilation in the board;
+- `meta-fred <https://github.com/fred-framework/meta-fred>`_: A Yocto layer to facilitate cross-compilation and integration with a Linux image;
+- `meta-retis <https://github.com/fred-framework/meta-retis>`_: A pre-configured Yocto image running on top of Xilinx petalinux that includes several resources for embedded software development for soft realtime applications. This image can be combined with *meta-fred* to generate a complete FRED-enabled Linux image for both **Zynq** and **ZynqMP** FPGA boards.
+
+
+
 System support design
 ----------------------
 
