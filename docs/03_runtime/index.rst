@@ -56,11 +56,11 @@ The FRED server initiates the FPGA support during the initialization phase and t
 In kernel space, two Linux kernel modules, called `fred_buffctl <https://github.com/fred-framework/fred-kmods/tree/fpga-mgr/fred_buffctl>`_ and `fpga_mgr <https://github.com/fred-framework/fred-kmods/tree/fpga-mgr/fpga_mgr_zynqmp_drv>`_, where developed/modified to abstract the access to the FPGA fabric.
 The `fred_buffctl` module is used to allocate the contiguous memory buffers used to share data between software processes and dynamically-reconfigured hardware accelerators. The  `fpga_mgr` module manages the device reconfiguration in an optimized way with respect to the Xilin`s stock driver.
 
-Three auxiliar repositories were develop to ease the FRED runtime deployment:
+OS Support
+-----------
 
-- `fred-framework <https://github.com/fred-framework/fred-framework>`_: a meta repository that combines all the software parts presented above, facilitating compilation in the board;
-- `meta-fred <https://github.com/fred-framework/meta-fred>`_: A Yocto layer to facilitate cross-compilation and integration with a Linux image;
-- `meta-retis <https://github.com/fred-framework/meta-retis>`_: A pre-configured Yocto image running on top of Xilinx petalinux that includes several resources for embedded software development for soft realtime applications. This image can be combined with *meta-fred* to generate a complete FRED-enabled Linux image for both **Zynq** and **ZynqMP** FPGA boards.
+It is necessary to have a Linux image with the basic setup and requirements to run the FRED Framework. For this, we created two Yocto layers called [meta-fred](https://github.com/fred-framework/meta-fred) and [meta-retis](https://github.com/fred-framework/meta-retis) that can be used with **Petalinux v2020.2** to create the tested Linux image. `meta-fred` cross-compile all software part of [FRED runtime](https://fred-framework-docs.readthedocs.io/en/latest/docs/03_runtime/index.html). Using this is Yocto layer is the recommended way to compile FRED runtime. Alternativetly, `meta-retis` provides all the Kernel setup and software compilation/analysis/debugging tooling to compile and test FRED software directly in the board. `meta-retis` also provides setup for running/debugging real-time Linux systems using, for instance, PREEMPT-RT, perf, ftrace, stress-ng, etc.
+So, the user can decide which approach to use, but the recommendation is to use both Yocto layers for an increased and more flexible design/debug capability. Finally, `fred-framework <https://github.com/fred-framework/fred-framework>`_ is a meta repository that combines all FRED Framework, facilitating compilation in the board;
 
 Testing FRED runtime
 ---------------------
