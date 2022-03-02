@@ -14,9 +14,10 @@ The FRED framework has been developed at the `RETIS Lab <https://retis.santannap
 Project coordinators
 --------------------
 
--   `Giorgio Buttazzo <http://retis.sssup.it/~giorgio/>`_
 -   `Alessandro Biondi <https://retis.sssup.it/~a.biondi/>`_
+-   `Giorgio Buttazzo <http://retis.sssup.it/~giorgio/>`_
 -   `Mauro Marinoni <http://retis.sssup.it/~nino/>`_
+-   `Tommaso Cucinotta <http://retis.sssup.it/~tommaso/>`_
 
 Contributors
 ------------
