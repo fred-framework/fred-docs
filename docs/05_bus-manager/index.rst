@@ -4,8 +4,8 @@
 Bus Manager
 ============
 
-This section presents the current development related to the `bus manager`. Currently, `bus manager` is still `not integrated into DART <https://github.com/fred-framework/dart/issues/1>`_. Section :ref:`fred_hw_support_sec` explains the current DART bus architecture.
-The rest of this chapter explains the *future* (i.e. to be integrated) FRED framework bus infrastructure, which consists of the following blocks.
+This section presents the current development related to the `bus manager`. Currently, the `bus manager` is still `not integrated into DART <https://github.com/fred-framework/dart/issues/1>`_. Section :ref:`fred_hw_support_sec` explains the current DART bus architecture.
+The rest of this chapter explains the *future* (i.e. to be integrated) FRED framework bus infrastructure, consisting of the following blocks.
 
 AXI HyperConnect
 ------------------
@@ -107,9 +107,9 @@ The next figure illustrates :ref:`typical_fpga_arch` in which two interfaces all
 
 Whenever multiple AXI masters in the FPGA want to access the same output port, an AXI Interconnect is in charge of arbitrating conflicting requests. The AXI protocol does not specify how conflicting transactions are arbitrated and hence the design of bus arbiters is left to the vendors that adopt AXI. For instance, the AXI arbiters for FPGA SoCs by Xilinx implement round-robin. Round-robin arbitration should guarantee fairness in contending the bus; specifically, it should guarantee a fair distribution of the bus bandwidth among the masters that contend a port.
 
-However, a completely unfair bandwidth distribution can be achieved under some configurations, like in the presence of transactions with heterogeneous burst sizes issued by the masters. This issue makes possible to arbitrarily decrease the bus bandwidth of a target master node.
+However, a completely unfair bandwidth distribution can be achieved under some configurations, like in the presence of transactions with heterogeneous burst sizes issued by the masters. This issue makes it possible to arbitrarily decrease the bus bandwidth of a target master node.
 
-The :ref:`abe_fig` developed in this framework restores fairness in the bus arbitration. The ABE is conceived to be placed between each hardware accelerator and an input port of an AXI Interconnect with the purpose of equalizing the address burst requests issued by the AXI master hardware accelerators.
+The :ref:`abe_fig` developed in this framework restores fairness in the bus arbitration. The ABE is conceived to be placed between each hardware accelerator and an input port of an AXI Interconnect to equalize the address burst requests issued by the AXI master hardware accelerators.
 
 .. _abe_fig:
 

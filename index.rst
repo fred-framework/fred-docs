@@ -23,12 +23,13 @@ It exploits **dynamic partial reconfiguration** and recurrent execution to virtu
 The :ref:`fred_framework_fig` figure shows the 5 pillars of FRED framework: floorplanner, bus synthesis, bus manager, runtime, and the analyzer. As presented next, the current focus is on the automatic floorplanner and FRED runtime. The other items are to be included into the framework in the future.
 
 
-The project is in developed at the `Real-Time Systems Laboratory (RETIS Lab) <https://retis.santannapisa.it/>`_ of the `Scuola Superiore Sant’Anna <https://www.santannapisa.it/en>`_ of Pisa.
+The project is developed at the `Real-Time Systems Laboratory (RETIS Lab) <https://retis.santannapisa.it/>`_ of the `Scuola Superiore Sant’Anna <https://www.santannapisa.it/en>`_ of Pisa.
 
 Table of Contents
 ------------------
 
-This document is organized as folloes. First it presents and introduction of the framework. The five next sections describes the five parts presented in the :ref:`fred_framework_fig` figure. Next there is the gettig started section which guides through the framework instalation and setup. The next section presents some case studies, research roadmap, complete list of publications, and additional project-related information.
+
+This document is organized as follows. First, it presents an introduction to the framework. The five following sections describe the five parts presented in the :ref:`fred_framework_fig` figure. Next, the *getting started* section guides through the framework installation and setup. The following section presents some case studies, a research roadmap, a complete list of publications, and additional project-related information.
 
 .. toctree::
    :maxdepth: 2
