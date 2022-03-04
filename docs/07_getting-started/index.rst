@@ -12,4 +12,13 @@ Next, is the *hardware design phase*, where `DART <../02_dart>`_ produces the bi
 
 The *software deployment phase* needs a FRED-ready Linux distribution, like the one created with the Yocto layers  `meta-fred <https://github.com/fred-framework/meta-fred>`_ and `meta-retis <https://github.com/fred-framework/meta-retis>`_ and Petalinux. Once the Linux image is ready, then starts the application software design. One can use a Yocto-based embedded software development flow, the recommended flow, or design the software directly on the board. The Linux image designed for FRED works with both approaches. 
 
+```
+$ wget https://raw.githubusercontent.com/fred-framework/fred-docs/main/docs/07_getting-started/build_img.sh .
+$ chmod +x build_img.sh
+$ wget https://raw.githubusercontent.com/fred-framework/meta-fred/main/scripts/pt-config
+# wget bsp
+$ ./build_img.sh <prj-name> <full-path/bsp> <full-path/pt-config>
+```
+
+
 The tutorials in `DART repository <https://github.com/fred-framework/dart/blob/master/docs/example.md>`_ are a good starting point for a development flow based on DART and FRED. The alternative is this `other tutorial <https://gitlab.retis.santannapisa.it/m.pagani/fred-docs>`_ within Vivado Xilinx for the hardware design and FRED for the software deployment phase.
