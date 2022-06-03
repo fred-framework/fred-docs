@@ -14,22 +14,23 @@ The *software deployment phase* needs a FRED-ready Linux distribution, like the 
 
 Here is the steps to build a Linux image for FRED:
 
-```
-$ wget https://raw.githubusercontent.com/fred-framework/fred-docs/main/docs/07_getting-started/build_img.sh .
-$ chmod +x build_img.sh
-$ wget https://raw.githubusercontent.com/fred-framework/meta-fred/main/scripts/pt-config
-# wget bsp
-$ ./build_img.sh -h
-```
+.. code-block::
+
+  $ wget https://raw.githubusercontent.com/fred-framework/fred-docs/main/docs/07_getting-started/build_img.sh .
+  $ chmod +x build_img.sh
+  $ wget https://raw.githubusercontent.com/fred-framework/meta-fred/main/scripts/pt-config
+  # wget bsp
+  $ ./build_img.sh -h
 
 Or, it is possible to download from `here <https://owncloud.santannapisa.it/index.php/s/r4gYzs0VOa7y6yY/download?path=%2FAMPERE-Shared%2FMS3&files=fred_image.tar.gz>`_ a pre-built image for the ZCU-102 board with a `basic example <https://github.com/fred-framework/meta-fred/tree/main/recipes-example/sum-vec>`_ built-in.
 
 Once the image is running on the board, To run the basic example, execute:
 
-```
-$ load_hw
-$ fred-server &
-$ sum-vec
-```
+.. code-block:: 
+
+  $ load_hw
+  $ fred-server &
+  $ sum-vec
 
 The tutorials in `DART repository <https://github.com/fred-framework/dart/blob/master/docs/example.md>`_ are a good starting point for a development flow based on DART and FRED. The alternative is this `other tutorial <https://gitlab.retis.santannapisa.it/m.pagani/fred-docs>`_ within Vivado Xilinx for the hardware design and FRED for the software deployment phase.
+
