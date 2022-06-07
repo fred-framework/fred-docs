@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 # Build a linux image with petalinux 2020.2 for FRED-based designs
 
 ############################################################
