@@ -1,8 +1,7 @@
 .. _intro:
 
-===================
-The FRED Framework
-===================
+Introduction to the FRED Framework
+----------------------------------
 
 
 FRED is a *framework* to support the design, development, and execution of *predictable software* on FPGA system-on-chips that include both general-purpose processors and an FPGA fabric, sharing a common memory. It exploits *dynamic partial reconfiguration* and recurrent execution to *virtualize* the FPGA fabric, enabling the user to allocate a larger number of hardware accelerators than could otherwise be fit into the physical fabric. It integrates automated *floorplanning* and a set of *runtime mechanisms* to enhance *predictability* by scheduling hardware resources and regulating bus/memory contention.

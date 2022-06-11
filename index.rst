@@ -1,7 +1,6 @@
 
-=========
-FRED Docs
-=========
+The FRED Framework
+----------------------------------
 
 FRED is a framework to support the design, development, and execution of *predictable* software on FPGA system-on-chips platforms.
 
@@ -25,14 +24,15 @@ The :ref:`fred_framework_fig` figure shows the 5 pillars of FRED framework: floo
 
 The project is developed at the `Real-Time Systems Laboratory (RETIS Lab) <https://retis.santannapisa.it/>`_ of the `Scuola Superiore Sant’Anna <https://www.santannapisa.it/en>`_ of Pisa.
 
-Table of Contents
-------------------
+.. comment
+    Table of Contents
+    ------------------
 
 
 This document is organized as follows. First, it presents an introduction to the framework. The five following sections describe the five parts presented in the :ref:`fred_framework_fig` figure. Next, the *getting started* section guides through the framework installation and setup. The following section presents some case studies, a research roadmap, a complete list of publications, and additional project-related information.
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 3
    
    
    docs/01_intro/index
